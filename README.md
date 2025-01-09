@@ -1,13 +1,13 @@
 # Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Manish Shrestha
 
-<h4>A Backend developer | JAVA </h4>
+<h4>A Random developer | Javascript </h4>
 
--   🔭 I’m currently working on a Java Project
+-   🔭 I’m currently working on a Javascript Project
 -   🌱 I’m Interested to work on Game Development
 -   👯 I’m making the world better by PRs
 -   💬 Ask me about Technology
 -   📫 How to reach me: manishshtestha472@gmail.com
--   ⚡ Fun fact: I'm currently studying BCA
+-   ⚡ Fun fact: I like blondes with curly haur
 
 <a href="https://www.github.com/manishshtestha" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/github/followers/manishshtestha?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917" /></a>
