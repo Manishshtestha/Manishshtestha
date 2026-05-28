@@ -5,7 +5,7 @@
 ## Hi there，I'm Manish  🙋‍♂️
 
 - Open source is something I'm interested in.
-- Artificial intelligence is an area I'm focusing on right now.
+- Mobile Development is an area I'm focusing on right now.
 
 
 </p>
