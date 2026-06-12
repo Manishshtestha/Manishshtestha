@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Degree-B.S.+in+Computer+Science-4c1d95?style=flat-square&logo=academia" alt="Academic Badge" />
+  <img src="https://img.shields.io/badge/Degree-BCA-4c1d95?style=flat-square&logo=academia" alt="Academic Badge" />
   <img src="https://img.shields.io/badge/Location-Kathmandu%2C+Nepal-1e1b4b?style=flat-square&logo=googlemaps&logoColor=A855F7" alt="Location Badge" />
 </p>
 
