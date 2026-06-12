@@ -194,7 +194,7 @@ This template resolves core data mapping challenges by implementing strict one-w
 </p>
 
 ---
-
+<!--
 ## 🏆 GitHub Trophies
 
 <p align="center">
@@ -202,6 +202,7 @@ This template resolves core data mapping challenges by implementing strict one-w
 </p>
 
 ---
+-->
 
 ## 📈 Contribution Activity
 
@@ -215,7 +216,7 @@ This template resolves core data mapping challenges by implementing strict one-w
 
  <p align="center">
   <img src="https://raw.githubusercontent.com/Manishshtestha/Manishshtestha/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Grid Snake Animation" width="100%" />
-</p> -->
+</p>-->
 
 ---
 
