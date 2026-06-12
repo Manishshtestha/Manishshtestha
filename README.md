@@ -185,8 +185,8 @@ This template resolves core data mapping challenges by implementing strict one-w
 ## 📊 GitHub Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Manishshtestha&show_icons=true&theme=dark&bg_color=1e1b4b&title_color=a855f7&icon_color=c084fc&text_color=e2e8f0&border_color=4c1d95&hide_border=false" alt="GitHub Readme Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Manishshtestha&layout=compact&theme=dark&bg_color=1e1b4b&title_color=a855f7&icon_color=c084fc&text_color=e2e8f0&border_color=4c1d95&hide_border=false" alt="Top Languages" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Manishshtestha&show_icons=true&theme=dark&bg_color=1e1b4b&title_color=a855f7&icon_color=c084fc&text_color=e2e8f0&border_color=4c1d95&hide_border=false" alt="GitHub Readme Stats" width="56%"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Manishshtestha&layout=compact&theme=dark&bg_color=1e1b4b&title_color=a855f7&icon_color=c084fc&text_color=e2e8f0&border_color=4c1d95&hide_border=false" alt="Top Languages" width="43%"  />
 </p>
 
 <p align="center">
