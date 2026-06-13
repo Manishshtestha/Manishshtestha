@@ -123,7 +123,7 @@ This template resolves core data mapping challenges by implementing strict one-w
 > `Flutter` `Dart` `State Management` `REST APIs` `Git`
 
 ### **Technical Assessment Track** | *Blue Stock Fintech*
-`Apr 2026 - Apr 2026`
+`Apr 2025 - Apr 2026`
 * Architected highly optimized computational modules meeting strict evaluation metrics and functional parameters.
 * Implemented clean software architectural principles to optimize programmatic flow and ensure robust execution.
 * Wrote extensive validation suites to guarantee component durability under extreme analytical stress tests.
