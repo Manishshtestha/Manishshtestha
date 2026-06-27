@@ -156,18 +156,6 @@ This template resolves core data mapping challenges by implementing strict one-w
 
 ---
 
-## 📖 Live Guestbook
-
-Hear from the community! Click the link below to append your name and a custom message directly to this profile setup in real-time.
-
-<p align="center">
-  <a href="https://github.com/Manishshtestha/Manishshtestha/issues/new?title=Guestbook&body=Write+your+message+here!+Please+keep+it+friendly.">✍️ Sign My Guestbook</a>
-</p>
-
-<!-- Guestbook -->
-<!-- Guestbook -->
-
----
 ## 📜 Certifications
 
 ### 🌐 Amazon Web Services
