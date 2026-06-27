@@ -2,9 +2,8 @@ name: Dynamic Profile Updater
 
 on:
   schedule:
-    # Runs every 12 hours to update your snake and feeds
     - cron: '0 */12 * * *'
-  workflow_dispatch: # Allows you to run it manually
+  workflow_dispatch:
   issue_comment:
     types: [created]
 
@@ -20,7 +19,33 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # --- FEATURE 1: GENERATE SNAKE GAME ---
+      # --- FEATURE 1: FETCH LATEST BLOGS/PROJECTS ---
+      - name: Update Blog Feed
+        uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://dev.to/feed/manishshtestha"
+          max_post_count: 4
+
+      # --- FEATURE 2: LIVE GUESTBOOK INTERACTION ---
+      - name: Update Guestbook
+        uses: muety/readme-guestbook@v1.0.9
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          max_entries: 5
+        if: ${{ github.event.issue.title == 'Guestbook' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+
+      # --- COMMIT MARKDOWN CHANGES BACK TO MAIN ---
+      - name: Commit Markdown updates
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff-index --quiet HEAD || git commit -m "Update dynamic markdown sections [skip ci]"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # --- FEATURE 3: GENERATE SNAKE GAME GRAPHICS ---
       - name: Generate Contribution Snake
         uses: Platane/snk/svg-only@v3
         with:
@@ -31,24 +56,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-# --- FEATURE 2: LIVE GUESTBOOK INTERACTION ---
-      - name: Update Guestbook
-        uses: muety/readme-guestbook@v1.0.9
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          max_entries: 5
-        if: ${{ github.event.issue.title == 'Guestbook' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
-
-      # --- FEATURE 3: LIVE GUESTBOOK INTERACTION ---
-      - name: Update Guestbook
-        uses: mscoutermarsh/github-readme-guestbook@v1.2.0
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MAX_ENTRIES: 5
-          # This ensures it only runs if someone uses your specific guestbook issue
-          if: ${{ github.event.issue.title == 'Sign my Guestbook' }} 
-
-      # --- DEPLOYMENT ---
+      # --- DEPLOY SNAKE ASSETS TO OUTPUT BRANCH ---
       - name: Deploy Generated Assets to Output Branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
