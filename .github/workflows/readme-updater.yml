@@ -1,0 +1,58 @@
+name: Dynamic Profile Updater
+
+on:
+  schedule:
+    # Runs every 12 hours to update your snake and feeds
+    - cron: '0 */12 * * *'
+  workflow_dispatch: # Allows you to run it manually
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      # --- SETUP ---
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # --- FEATURE 1: GENERATE SNAKE GAME ---
+      - name: Generate Contribution Snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # --- FEATURE 2: FETCH LATEST BLOGS/PROJECTS ---
+      # Note: Replace the feed_list with your Dev.to, Medium, or personal RSS link
+      - name: Update Blog Feed
+        uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://dev.to/feed/manishshtestha" # Update this to your URL!
+          max_post_count: 4
+
+      # --- FEATURE 3: LIVE GUESTBOOK INTERACTION ---
+      - name: Update Guestbook
+        uses: mscoutermarsh/github-readme-guestbook@v1.2.0
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAX_ENTRIES: 5
+          # This ensures it only runs if someone uses your specific guestbook issue
+          if: ${{ github.event.issue.title == 'Sign my Guestbook' }} 
+
+      # --- DEPLOYMENT ---
+      - name: Deploy Generated Assets to Output Branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
