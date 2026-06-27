@@ -19,14 +19,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # --- FEATURE 1: FETCH LATEST BLOGS/PROJECTS ---
-      - name: Update Blog Feed
-        uses: gautamkrishnar/blog-post-workflow@v1
-        with:
-          feed_list: "https://dev.to/feed/manishshtestha"
-          max_post_count: 4
-
-      # --- FEATURE 2: LIVE GUESTBOOK INTERACTION ---
+      # --- FEATURE 1: LIVE GUESTBOOK INTERACTION ---
       - name: Update Guestbook
         uses: muety/readme-guestbook@v1.0.9
         with:
@@ -45,7 +38,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # --- FEATURE 3: GENERATE SNAKE GAME GRAPHICS ---
+      # --- FEATURE 2: GENERATE SNAKE GAME GRAPHICS ---
       - name: Generate Contribution Snake
         uses: Platane/snk/svg-only@v3
         with:
