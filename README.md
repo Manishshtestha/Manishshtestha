@@ -165,7 +165,6 @@ Hear from the community! Click the link below to append your name and a custom m
 </p>
 
 <!-- Guestbook -->
-<!-- This section will automatically update with a clean entry list -->
 <!-- Guestbook -->
 
 ---
