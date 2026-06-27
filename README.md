@@ -39,17 +39,17 @@ I am a mobile application and game developer based in Kathmandu, Nepal, dedicate
 
 ### 🚀 Languages
 <p align="justify">
-  <img src="https://skillicons.dev/icons?i=dart,js,ts,python,cpp,c,kotlin,java" alt="Languages" />
+  <img src="https://skillicons.dev/icons?i=dart,js,ts,python,cpp,c,kotlin,java,php" alt="Languages" />
 </p>
 
 ### 🎨 Frontend
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=flutter,react,nextjs,tailwind,html,css" alt="Frontend" />
+  <img src="https://skillicons.dev/icons?i=flutter,react,nextjs,tailwind,html,css,scss" alt="Frontend" />
 </p>
 
 ### 🗄 Backend & Databases
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,postgres,mongodb,firebase,supabase" alt="Backend & Databases" />
+  <img src="https://skillicons.dev/icons?i=nodejs,express,postgres,mongodb,firebase,supabase,appwrite" alt="Backend & Databases" />
 </p>
 
 ### ☁ Cloud, DevOps & Tooling
@@ -156,6 +156,15 @@ This template resolves core data mapping challenges by implementing strict one-w
 
 ---
 
+## 📖 Live Guestbook
+
+Hear from the community! Click the link below to append your name and a custom message directly to this profile setup in real-time.
+
+<p align="center">
+  <a href="https://github.com/Manishshtestha/Manishshtestha/issues/new?title=Sign+my+Guestbook&body=Write+your+message+here!+Please+keep+it+friendly.">✍️ Sign My Guestbook</a>
+</p>
+
+---
 ## 📜 Certifications
 
 ### 🌐 Amazon Web Services
@@ -212,11 +221,15 @@ This template resolves core data mapping challenges by implementing strict one-w
 
 ---
 
-<!--## 🐍 Contribution Snake
+## 🐍 Contribution Snake
 
- <p align="center">
-  <img src="https://raw.githubusercontent.com/Manishshtestha/Manishshtestha/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Grid Snake Animation" width="100%" />
-</p>-->
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Manishshtestha/Manishshtestha/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Manishshtestha/Manishshtestha/output/github-contribution-grid-snake.svg">
+    <img alt="GitHub Contribution Grid Snake Animation" src="https://raw.githubusercontent.com/Manishshtestha/Manishshtestha/output/github-contribution-grid-snake.svg" width="100%">
+  </picture>
+</p>
 
 ---
 
@@ -235,3 +248,7 @@ exploring:
 open_to:
   - "Enterprise mobile development tracks"
   - "Interactive real-time systems engineering positions"
+```
+
+## 📰 Latest Technical Writeups & Releases
+
