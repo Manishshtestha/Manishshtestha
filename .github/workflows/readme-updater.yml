@@ -31,13 +31,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # --- FEATURE 2: FETCH LATEST BLOGS/PROJECTS ---
-      # Note: Replace the feed_list with your Dev.to, Medium, or personal RSS link
-      - name: Update Blog Feed
-        uses: gautamkrishnar/blog-post-workflow@v1
+# --- FEATURE 2: LIVE GUESTBOOK INTERACTION ---
+      - name: Update Guestbook
+        uses: muety/readme-guestbook@v1.0.9
         with:
-          feed_list: "https://dev.to/feed/manishshtestha" # Update this to your URL!
-          max_post_count: 4
+          token: ${{ secrets.GITHUB_TOKEN }}
+          max_entries: 5
+        if: ${{ github.event.issue.title == 'Guestbook' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
 
       # --- FEATURE 3: LIVE GUESTBOOK INTERACTION ---
       - name: Update Guestbook
