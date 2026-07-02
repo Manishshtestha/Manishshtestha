@@ -11,8 +11,8 @@
 
 <p align="center">
   <a href="https://github.com/Manishshtestha"><img src="https://img.shields.io/badge/Portfolio-Explore%20Site-6b21a8?style=for-the-badge&logo=vercel" alt="Portfolio Button" /></a>
-  <a href="https://linkedin.com/in/username"><img src="https://img.shields.io/badge/LinkedIn-Connect-4c1d95?style=for-the-badge&logo=linkedin" alt="LinkedIn Button" /></a>
-  <a href="mailto:manish.shrestha@example.com"><img src="https://img.shields.io/badge/Email-Contact-581c87?style=for-the-badge&logo=gmail" alt="Email Button" /></a>
+  <a href="https://linkedin.com/in/manish-kumar-shrestha"><img src="https://img.shields.io/badge/LinkedIn-Connect-4c1d95?style=for-the-badge&logo=linkedin" alt="LinkedIn Button" /></a>
+  <a href="mailto:manishshtestha472@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-581c87?style=for-the-badge&logo=gmail" alt="Email Button" /></a>
   <a href="https://github.com/Manishshtestha"><img src="https://img.shields.io/badge/GitHub-Follow-3b0764?style=for-the-badge&logo=github" alt="GitHub Button" /></a>
 </p>
 
