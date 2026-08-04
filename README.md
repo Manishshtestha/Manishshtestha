@@ -201,10 +201,9 @@ This template resolves core data mapping challenges by implementing strict one-w
   <img src="https://github-profile-trophy.vercel.app/?username=Manishshtestha&theme=darkhub&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" />
 </p>
 
----
--->
-
-## 📈 Contribution Activity
+- Open source is something I'm interested in.
+- Mobile Development is an area I'm focusing on right now.
+- 
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Manishshtestha&theme=react-dark&bg_color=1e1b4b&color=a855f7&line=c084fc&point=ffffff&area=true&hide_border=false" alt="Contribution Activity Graph" width="98%" />
