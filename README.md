@@ -6,6 +6,6 @@
 
 - Open source is something I'm interested in.
 - Mobile Development is an area I'm focusing on right now.
-
+- 
 
 </p>
